@@ -1,0 +1,6 @@
+[submodule "web/typepad"]
+	path = web/typepad
+	url = git@github.com:Yuoek/typepad.git
+[submodule "web/qwerty-learner"]
+	path = web/qwerty-learner
+	url = git@github.com:Yuoek/qwerty-learner.git

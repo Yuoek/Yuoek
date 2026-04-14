@@ -4,3 +4,6 @@
 [submodule "web/qwerty-learner"]
 	path = web/qwerty-learner
 	url = git@github.com:Yuoek/qwerty-learner.git
+[submodule "film/film"]
+	path = film/film
+	url = git@github.com:Yuoek/film.git

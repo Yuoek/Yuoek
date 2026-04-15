@@ -7,3 +7,15 @@
 [submodule "film/film"]
 	path = film/film
 	url = git@github.com:Yuoek/film.git
+[submodule "code/python"]
+	path = code/python
+	url = git@github.com:Yuoek/python.git
+[submodule "film/music"]
+	path = film/music
+	url = git@github.com:Yuoek/music.git
+[submodule "science/mathematics"]
+	path = science/mathematics
+	url = git@github.com:Yuoek/mathematics.git
+[submodule "hugo/hugo"]
+	path = hugo/hugo
+	url = git@github.com:Yuoek/hugo.git

@@ -25,3 +25,36 @@
 [submodule "class"]
 	path = class
 	url = git@github.com:Yuoek/class.git
+[submodule "hugo/hugo-docs"]
+	path = hugo/hugo-docs
+	url = git@github.com:Yuoek/hugo-docs.git
+[submodule "code/c"]
+	path = code/c
+	url = git@github.com:Yuoek/c.git
+[submodule "code/cpp"]
+	path = code/cpp
+	url = git@github.com:Yuoek/cpp.git
+[submodule "code/java"]
+	path = code/java
+	url = git@github.com:Yuoek/java.git
+[submodule "code/javascript"]
+	path = code/javascript
+	url = git@github.com:Yuoek/javascript.git
+[submodule "code/go"]
+	path = code/go
+	url = git@github.com:Yuoek/go.git
+[submodule "hugo/hugo-wiki"]
+	path = hugo/hugo-wiki
+	url = git@github.com:Yuoek/hugo-wiki.git
+[submodule "hugo/hugo-comment"]
+	path = hugo/hugo-comment
+	url = git@github.com:Yuoek/hugo-comment.git
+[submodule "film/quote"]
+	path = film/quote
+	url = git@github.com:Yuoek/quote.git
+[submodule "film/paint"]
+	path = film/paint
+	url = git@github.com:Yuoek/paint.git
+[submodule "film/poetry"]
+	path = film/poetry
+	url = git@github.com:Yuoek/poetry.git

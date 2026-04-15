@@ -37,3 +37,19 @@ git submodule update --remote <子模块路径>
 ```
 
 
+**删除子模块**
+```bash
+git submodule deinit -f tools/git
+```
+```bash
+git rm tools/git
+```
+```bash
+rm -rf .git/modules/tools/git
+```
+```bash
+git add .
+```
+```bash
+git commit -m "remove submodule"
+```

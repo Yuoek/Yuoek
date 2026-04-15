@@ -19,3 +19,9 @@
 [submodule "hugo/hugo"]
 	path = hugo/hugo
 	url = git@github.com:Yuoek/hugo.git
+[submodule "tools"]
+	path = tools
+	url = git@github.com:Yuoek/tools.git
+[submodule "class"]
+	path = class
+	url = git@github.com:Yuoek/class.git

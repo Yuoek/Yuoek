@@ -1,0 +1,412 @@
+
+\section{第一章 Python 入门基础认知}
+\subsection{1.1 编程语言概述}
+\begin{itemize}
+\item 编译型语言与解释型语言区别
+\item Python 发展历程、主流版本差异
+\item Python 语言特性：简洁、跨平台、开源
+\item Python 应用方向：爬虫、数据分析、后端、人工智能
+\end{itemize}
+
+\subsection{1.2 环境搭建与解释器}
+\begin{itemize}
+\item Windows、Linux、Mac 系统安装 Python
+\item Python 官方解释器、Anaconda 集成环境
+\item 环境变量配置与 cmd 终端调用
+\item 虚拟环境 \texttt{venv} 创建与隔离使用
+\end{itemize}
+
+\subsection{1.3 代码编辑器与运行方式}
+\begin{itemize}
+\item IDLE 自带编辑器基础操作
+\item VS Code 配置 Python 运行调试环境
+\item PyCharm 专业项目开发工具使用
+\item 交互式终端运行、脚本文件运行区别
+\end{itemize}
+
+\subsection{1.4 基础语法框架规范}
+\begin{itemize}
+\item Python 缩进规则与代码块划分
+\item 单行注释 \#、多行三引号注释写法
+\item 标识符命名规则、关键字禁止使用
+\item 语句换行、续行符书写规范
+\end{itemize}
+
+\section{第二章 变量、数据类型与运算}
+\subsection{2.1 变量定义与内存原理}
+\begin{itemize}
+\item 变量赋值、多次赋值覆盖特性
+\item 变量引用、内存地址查看 \texttt{id()}
+\item 变量命名规范、大小写敏感区分
+\item 常量模拟定义与使用习惯
+\end{itemize}
+
+\subsection{2.2 六大基础数据类型}
+\begin{itemize}
+\item 整型 \texttt{int}：正负整数、进制表示
+\item 浮点型 \texttt{float}：小数、精度问题
+\item 布尔型 \texttt{bool}：True、False 逻辑值
+\item 字符串 \texttt{str}：单双三引号定义
+\item 列表 \texttt{list}、元组 \texttt{tuple} 序列类型
+\item 字典 \texttt{dict}、集合 \texttt{set} 映射无序类型
+\end{itemize}
+
+\subsection{2.3 数据类型转换}
+\begin{itemize}
+\item 整型、浮点型互相强制转换
+\item 字符串与数字类型转换规则
+\item 序列、集合、字典类型互相转换
+\item 自动隐式类型转换触发场景
+\end{itemize}
+
+\subsection{2.4 算术运算符}
+\begin{itemize}
+\item 加减乘除、取模、整除运算
+\item 幂运算、正负号运算规则
+\item 算术运算优先级与括号提升优先级
+\end{itemize}
+
+\subsection{2.5 赋值与复合赋值运算符}
+\begin{itemize}
+\item 基础赋值、链式赋值、解包赋值
+\item 加减乘除取模复合赋值运算
+\item 多变量同步赋值、交换变量写法
+\end{itemize}
+
+\subsection{2.6 比较、逻辑、成员运算符}
+\begin{itemize}
+\item 大小、相等、不等比较运算
+\item 逻辑与 \texttt{and}、或 \texttt{or}、非 \texttt{not}
+\item 成员 \texttt{in}、不属于 \texttt{not in} 判断
+\item 身份运算符 \texttt{is}、\texttt{is not} 地址比对
+\end{itemize}
+
+\subsection{2.7 输入输出基础}
+\begin{itemize}
+\item \texttt{input()} 键盘读取字符串数据
+\item \texttt{print()} 基础打印、多内容拼接输出
+\item 换行输出、取消换行输出控制
+\item 格式化输出百分号写法
+\item \texttt{format()} 格式化占位输出
+\item f\text{-}string 简洁格式化写法
+\end{itemize}
+
+\section{第三章 程序流程控制语句}
+\subsection{3.1 顺序结构}
+\begin{itemize}
+\item 代码自上而下依次执行逻辑
+\item 简单数据计算、信息录入案例
+\end{itemize}
+
+\subsection{3.2 分支 \texttt{if} 判断语句}
+\begin{itemize}
+\item 单分支 \texttt{if} 条件判断
+\item 双分支 \texttt{if...else} 二选一逻辑
+\item 多分支 \texttt{if...elif...else} 区间判断
+\item \texttt{if} 语句多层嵌套写法
+\item 条件表达式简写三元运算
+\end{itemize}
+
+\subsection{3.3 \texttt{while} 循环语句}
+\begin{itemize}
+\item \texttt{while} 循环语法结构与执行流程
+\item 循环变量初始化、条件判断、变量更新
+\item 求和、计数、遍历基础循环案例
+\item \texttt{while} 多层嵌套循环使用
+\end{itemize}
+
+\subsection{3.4 \texttt{for} 遍历循环语句}
+\begin{itemize}
+\item \texttt{for...in} 遍历序列、字符串、容器
+\item \texttt{range()} 整数序列生成规则
+\item \texttt{for} 单层、多层嵌套循环
+\item 遍历取值、索引取值两种方式
+\end{itemize}
+
+\subsection{3.5 循环跳转与附加语句}
+\begin{itemize}
+\item \texttt{break} 终止跳出当前循环
+\item \texttt{continue} 跳过本次循环剩余代码
+\item \texttt{else} 循环正常结束触发分支
+\item 死循环写法与合理终止条件
+\end{itemize}
+
+\section{第四章 序列数据结构}
+\subsection{4.1 字符串 \texttt{str}}
+\begin{itemize}
+\item 字符串索引、正反下标取值
+\item 字符串切片截取子串规则
+\item 字符串常用查找统计方法
+\item 大小写转换、去除空格操作
+\item 字符串分割、拼接、替换处理
+\item 字符串判断、前缀后缀检测
+\item 字符串格式化、编码解码转换
+\end{itemize}
+
+\subsection{4.2 列表 \texttt{list}}
+\begin{itemize}
+\item 列表创建、元素增删改查基础
+\item 索引取值、切片截取列表片段
+\item \texttt{append}、\texttt{extend}、\texttt{insert} 添加元素
+\item \texttt{del}、\texttt{pop}、\texttt{remove} 删除元素
+\item 列表排序、反转、复制操作
+\item 列表嵌套、多维列表遍历
+\item 列表推导式快速生成序列
+\end{itemize}
+
+\subsection{4.3 元组 \texttt{tuple}}
+\begin{itemize}
+\item 元组不可变特性与创建方式
+\item 单元素元组逗号书写规范
+\item 元组索引、切片读取数据
+\item 元组遍历、统计、查找方法
+\item 元组应用场景与列表取舍
+\end{itemize}
+
+\section{第五章 散列数据结构}
+\subsection{5.1 字典 \texttt{dict}}
+\begin{itemize}
+\item 键值对结构、字典创建方式
+\item 键取值、键值新增修改操作
+\item 根据键删除字典数据元素
+\item 获取所有键、值、键值对方法
+\item 字典遍历、多种遍历写法
+\item 字典嵌套多层数据读取
+\item 字典推导式快速构建字典
+\end{itemize}
+
+\subsection{5.2 集合 \texttt{set}}
+\begin{itemize}
+\item 集合无序去重特性与创建
+\item 集合添加、删除元素操作
+\item 交集、并集、差集、对称差集运算
+\item 集合成员判断、子集超集比对
+\item 集合去重、数据快速筛选场景
+\end{itemize}
+
+\section{第六章 函数基础与模块化编程}
+\subsection{6.1 函数定义与调用}
+\begin{itemize}
+\item \texttt{def} 关键字定义函数格式
+\item 函数封装代码、复用简化逻辑
+\item 函数调用执行、多次重复调用
+\item 函数文档注释规范编写
+\end{itemize}
+
+\subsection{6.2 函数参数分类}
+\begin{itemize}
+\item 位置参数顺序传参规则
+\item 关键字参数指定对应传参
+\item 默认参数缺省赋值使用
+\item 不定长位置参数 \texttt{*args}
+\item 不定长关键字参数 \texttt{**kwargs}
+\item 各类参数混合排布顺序规范
+\end{itemize}
+
+\subsection{6.3 函数返回值}
+\begin{itemize}
+\item \texttt{return} 单个数据返回
+\item 多个返回值元组打包返回
+\item 无返回值默认返回 \texttt{None}
+\item 函数中途终止返回特性
+\end{itemize}
+
+\subsection{6.4 变量作用域}
+\begin{itemize}
+\item 局部变量函数内部生效范围
+\item 全局变量整个程序生效范围
+\item \texttt{global} 关键字修改全局变量
+\item \texttt{nonlocal} 嵌套内层修改外层变量
+\item 局部全局变量查找优先级
+\end{itemize}
+
+\subsection{6.5 函数进阶用法}
+\begin{itemize}
+\item 函数嵌套定义与内层调用
+\item 递归函数自身调用逻辑
+\item 递归终止条件防止死递归
+\item 常用递归数学、遍历案例
+\end{itemize}
+
+\section{第七章 异常捕获与处理机制}
+\subsection{7.1 常见运行异常类型}
+\begin{itemize}
+\item 下标越界、类型转换异常
+\item 键不存在、除数为零异常
+\item 文件路径、语法运行异常区分
+\end{itemize}
+
+\subsection{7.2 异常捕获语句}
+\begin{itemize}
+\item \texttt{try...except} 基础异常捕获
+\item 指定捕获单一、多种异常类型
+\item \texttt{else} 无异常执行分支
+\item \texttt{finally} 无论异常必定执行代码
+\item \texttt{raise} 主动手动抛出异常
+\end{itemize}
+
+\section{第八章 文件读写操作}
+\subsection{8.1 文件基础概念与打开模式}
+\begin{itemize}
+\item 文本文件、二进制文件读写区别
+\item \texttt{r}只读、\texttt{w}清空写入、\texttt{a}追加模式
+\item \texttt{r+}、\texttt{w+}、\texttt{ab} 混合读写模式
+\item 绝对路径、相对路径书写格式
+\end{itemize}
+
+\subsection{8.2 文件读写基础操作}
+\begin{itemize}
+\item \texttt{open()} 打开文件、\texttt{close()} 关闭文件
+\item 单次读取、按行读取文件内容
+\item 单行、多行数据写入文件
+\item \texttt{with} 上下文自动关闭文件
+\end{itemize}
+
+\subsection{8.3 文件目录与高级操作}
+\begin{itemize}
+\item \texttt{os} 模块判断文件、文件夹存在
+\item 创建目录、删除文件、重命名文件
+\item 遍历文件夹内部所有文件
+\item 二进制读写图片、音视频文件
+\end{itemize}
+
+\section{第九章 面向对象编程基础}
+\subsection{9.1 类与对象核心概念}
+\begin{itemize}
+\item 类抽象模板、对象实例实体关系
+\item \texttt{class} 关键字定义类结构
+\item 根据类创建实例对象
+\end{itemize}
+
+\subsection{9.2 构造方法与实例属性}
+\begin{itemize}
+\item \texttt{\_\_init\_\_} 初始化构造方法
+\item 实例属性定义、赋值、读取调用
+\item 自定义多个实例属性参数
+\end{itemize}
+
+\subsection{9.3 实例方法}
+\begin{itemize}
+\item 实例方法定义、\texttt{self} 自身参数含义
+\item 对象调用实例方法执行业务逻辑
+\item 方法内部读写自身实例属性
+\end{itemize}
+
+\subsection{9.4 类属性与类方法}
+\begin{itemize}
+\item 类属性归属整个类共享数据
+\item 类方法装饰器 \texttt{@classmethod}
+\item 静态方法装饰器 \texttt{@staticmethod}
+\item 三类属性方法使用场景区分
+\end{itemize}
+
+\subsection{9.5 面向对象三大特性}
+\begin{itemize}
+\item 封装：属性方法私有化隐藏
+\item 继承：子类复用父类代码结构
+\item 单继承、多继承写法与调用
+\item 重写父类方法实现逻辑改写
+\item 多态不同子类统一方法不同表现
+\end{itemize}
+
+\subsection{9.6 内置特殊方法}
+\begin{itemize}
+\item \texttt{\_\_str\_\_} 自定义对象字符串输出
+\item \texttt{\_\_del\_\_} 对象销毁自动触发方法
+\item 运算符重载特殊方法简易使用
+\end{itemize}
+
+\section{第十章 模块、包与常用标准库}
+\subsection{10.1 模块导入使用}
+\begin{itemize}
+\item 单个模块整体导入 \texttt{import}
+\item 局部指定功能导入 \texttt{from...import}
+\item 模块别名简化命名调用
+\item 自定义模块创建、跨文件调用
+\end{itemize}
+
+\subsection{10.2 包管理与层级导入}
+\begin{itemize}
+\item 包文件夹结构、\texttt{\_\_init\_\_} 文件
+\item 多级包内模块导入访问
+\item \texttt{pip} 第三方库安装卸载命令
+\end{itemize}
+
+\subsection{10.3 常用内置标准库}
+\begin{itemize}
+\item \texttt{math} 数学计算常数与函数
+\item \texttt{random} 随机数生成、随机抽取打乱
+\item \texttt{datetime} 日期时间获取格式化
+\item \texttt{json} 字典列表与json数据互转
+\item \texttt{re} 正则表达式匹配查找替换
+\end{itemize}
+
+\section{第十一章 高级语法与编程技巧}
+\subsection{11.1 迭代器与生成器}
+\begin{itemize}
+\item 可迭代对象、迭代器概念区分
+\item \texttt{iter()}、\texttt{next()} 迭代取值
+\item \texttt{yield} 生成器节省内存原理
+\item 生成器表达式简易创建写法
+\end{itemize}
+
+\subsection{11.2 匿名函数与高阶函数}
+\begin{itemize}
+\item \texttt{lambda} 匿名函数简洁定义
+\item \texttt{map} 映射批量处理序列元素
+\item \texttt{filter} 条件过滤筛选数据
+\item \texttt{sorted} 自定义规则排序序列
+\end{itemize}
+
+\subsection{11.3 装饰器基础}
+\begin{itemize}
+\item 装饰器无侵入扩展函数功能
+\item 简单装饰器定义与使用
+\item 通用装饰器适配任意参数函数
+\end{itemize}
+
+\section{第十二章 数据处理与实战案例}
+\subsection{12.1 基础数据统计案例}
+\begin{itemize}
+\item 成绩求和、最值、平均分计算
+\item 数据去重、筛选、分类统计
+\item 列表字典批量数据规整处理
+\end{itemize}
+
+\subsection{12.2 文件数据解析案例}
+\begin{itemize}
+\item 文本日志读取信息提取
+\item 多行数据拆分存入容器
+\item 统计文件字符单词行数
+\end{itemize}
+
+\subsection{12.3 小型综合实操项目}
+\begin{itemize}
+\item 简易计算器数值运算程序
+\item 个人名片信息管理系统
+\item 文本批量处理工具开发
+\item 随机抽奖、猜数字小游戏
+\end{itemize}
+
+\section{第十三章 代码调试与规范优化}
+\subsection{13.1 程序错误分类排查}
+\begin{itemize}
+\item 语法错误、运行错误、逻辑错误
+\item 报错信息关键字定位问题行
+\item 缩进、符号、参数常见低级错误
+\end{itemize}
+
+\subsection{13.2 代码调试方式}
+\begin{itemize}
+\item 打印中间变量人工排查逻辑
+\item IDE 断点调试分步运行查看数据
+\item 边界值、异常用例测试验证
+\end{itemize}
+
+\subsection{13.3 代码规范与性能优化}
+\begin{itemize}
+\item 命名规范、注释书写规范
+\item 循环嵌套精简、冗余代码删减
+\item 大数据场景内存占用优化
+\item 执行效率简易提升技巧
+\end{itemize}

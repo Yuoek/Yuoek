@@ -1,0 +1,542 @@
+\section{第一章 Java 语言入门认知}
+\subsection{1.1 语言基础概述}
+\begin{itemize}
+\item Java语言诞生与迭代发展历程
+\item 面向过程程序设计思想特点
+\item 面向对象程序设计核心思想
+\item Java跨平台运行核心原理
+\item 语言安全性健壮性优势
+\item 垃圾自动回收机制特点
+\item 主流应用开发业务领域
+\item Java三大版本区分与适用场景
+\end{itemize}
+
+\subsection{1.2 开发环境体系}
+\begin{itemize}
+\item JDK开发工具包组成作用
+\item JRE运行环境功能定位
+\item JVM虚拟机底层执行原理
+\item 环境变量配置参数含义
+\item 主流集成开发工具使用
+\item 项目工程目录层级结构
+\item 源代码文件命名规范
+\item 编译阶段语法校验过程
+\item 字节码文件生成规则
+\item 类加载器加载运行流程
+\end{itemize}
+
+\subsection{1.3 基础语法格式规范}
+\begin{itemize}
+\item 标识符合法组成字符范围
+\item 标识符命名大小写约束
+\item 标识符命名行业规范
+\item 系统关键字定义与分类
+\item 保留字使用限制规则
+\item 单行注释编写格式用途
+\item 多行块注释编写格式用途
+\item 文档注释规范与作用
+\item 程序语句结束分隔标识
+\item 代码块大括号划分规则
+\item 代码缩进排版统一标准
+\end{itemize}
+
+\section{第二章 变量、常量与数据类型}
+\subsection{2.1 变量完整核心概念}
+\begin{itemize}
+\item 变量内存存储本质含义
+\item 变量声明语法格式作用
+\item 变量定义内存空间开辟
+\item 变量初始化赋值操作
+\item 变量二次赋值数值修改
+\item 局部变量作用生效范围
+\item 成员变量作用生效范围
+\item 静态变量作用域特性
+\item 变量内存生命周期周期
+\item 变量默认初始值规则
+\end{itemize}
+
+\subsection{2.2 八大基本数据类型}
+\begin{itemize}
+\item byte字节型取值范围与占用字节
+\item short短整型存储特性
+\item int基本整型常规使用场景
+\item long长整型大数存储规则
+\item float单精度浮点小数类型
+\item double双精度高精度浮点类型
+\item char字符型ASCII编码存储
+\item boolean布尔型真假逻辑判定
+\item 基本类型默认数值大小
+\item 各类型内存占用空间对比
+\end{itemize}
+
+\subsection{2.3 引用数据类型}
+\begin{itemize}
+\item 引用类型内存存储特点
+\item String字符串类型本质
+\item 一维数组引用存储形式
+\item 多维数组引用结构特点
+\item 自定义类对象引用概念
+\item 空引用null含义与风险
+\end{itemize}
+
+\subsection{2.4 数据类型相互转换}
+\begin{itemize}
+\item 自动隐式类型转换触发条件
+\item 基本类型转换精度提升顺序
+\item 表达式运算自动转换规则
+\item 手动强制类型转换语法格式
+\item 高精度转低精度强制约束
+\item 类型转换数据精度丢失问题
+\item 转换后数值结果校验判定
+\end{itemize}
+
+\subsection{2.5 常量定义与使用}
+\begin{itemize}
+\item 常量不可修改核心特性
+\item 字面常量各类数值写法
+\item final关键字修饰常量
+\item 常量初始化唯一赋值规则
+\item 常量作用域划分范围
+\item 常量命名大写规范要求
+\end{itemize}
+
+\section{第三章 运算符完整体系}
+\subsection{3.1 算术运算符}
+\begin{itemize}
+\item 加法运算数值计算规则
+\item 减法运算数值计算规则
+\item 乘法运算数值计算规则
+\item 除法整数与小数运算区分
+\item 取模运算余数计算逻辑
+\item 前置自增执行先后顺序
+\item 后置自增执行先后顺序
+\item 前置自减运算执行逻辑
+\item 后置自减运算执行逻辑
+\end{itemize}
+
+\subsection{3.2 赋值与复合赋值运算符}
+\begin{itemize}
+\item 基础赋值运算数据覆盖规则
+\item 加法复合赋值简写运算
+\item 减法复合赋值简写运算
+\item 乘法复合赋值简写运算
+\item 除法复合赋值简写运算
+\item 取模复合赋值简写运算
+\end{itemize}
+
+\subsection{3.3 关系比较运算符}
+\begin{itemize}
+\item 相等判断运算规则
+\item 不等判断运算规则
+\item 大于大小比较运算
+\item 小于大小比较运算
+\item 大于等于边界比较
+\item 小于等于边界比较
+\item 关系运算布尔结果返回
+\end{itemize}
+
+\subsection{3.4 逻辑运算符}
+\begin{itemize}
+\item 逻辑与全真判定规则
+\item 逻辑或一真判定规则
+\item 逻辑非真假取反运算
+\item 短路与执行截断特性
+\item 短路或执行截断特性
+\item 多条件逻辑组合判断
+\end{itemize}
+
+\subsection{3.5 特殊运算符与优先级}
+\begin{itemize}
+\item 三元条件运算符格式逻辑
+\item 按位与二进制运算规则
+\item 按位或二进制运算规则
+\item 按位异或二进制运算规则
+\item 二进制左移位移运算
+\item 二进制右移位移运算
+\item 运算符优先级排序层级
+\item 运算符左右结合性判定
+\end{itemize}
+
+\section{第四章 程序流程控制结构}
+\subsection{4.1 顺序执行结构}
+\begin{itemize}
+\item 自上而下逐行执行逻辑
+\item 顺序代码执行先后规则
+\item 基础顺序业务代码编写
+\end{itemize}
+
+\subsection{4.2 分支判断结构}
+\begin{itemize}
+\item if单分支条件判断语句
+\item if-else双分支二选一逻辑
+\item else-if多分支区间匹配
+\item switch定值匹配分支语句
+\item switch表达式取值限制
+\item case分支匹配执行规则
+\item case穿透问题产生与解决
+\item default默认兜底分支作用
+\item 分支语句嵌套多层使用
+\end{itemize}
+
+\subsection{4.3 循环遍历结构}
+\begin{itemize}
+\item while先判断后执行循环
+\item while循环终止条件控制
+\item do-while先执行后判断循环
+\item do-while至少执行一次特性
+\item for循环初始化条件迭代结构
+\item for循环变量生命周期范围
+\item 增强for循环集合遍历用法
+\end{itemize}
+
+\subsection{4.4 循环跳转与多层嵌套}
+\begin{itemize}
+\item break跳出当前单层循环
+\item break标记跳出多层循环
+\item continue跳过单次循环迭代
+\item 单层循环业务逻辑实现
+\item 双层循环嵌套运行顺序
+\item 多层循环嵌套实际场景
+\item 无限循环构成与终止方式
+\end{itemize}
+
+\section{第五章 数组容器}
+\subsection{5.1 数组基础核心属性}
+\begin{itemize}
+\item 数组连续内存存储原理
+\item 数组统一数据类型约束
+\item 下标从零起始索引规则
+\item 数组长度固定不可变更
+\item length属性获取数组长度
+\item 数组默认初始化数值
+\end{itemize}
+
+\subsection{5.2 一维数组操作}
+\begin{itemize}
+\item 一维数组声明定义格式
+\item 动态初始化数组空间
+\item 静态初始化直接赋值
+\item 下标定位存取数组元素
+\item 数组元素单独修改赋值
+\item 普通循环遍历全部元素
+\end{itemize}
+
+\subsection{5.3 多维数组结构}
+\begin{itemize}
+\item 二维数组行列结构含义
+\item 二维数组定义初始化
+\item 二维数组下标定位元素
+\item 嵌套循环遍历二维数组
+\item 多维数组扩展结构特性
+\end{itemize}
+
+\subsection{5.4 数组常用基础算法}
+\begin{itemize}
+\item 数组最大值查找算法
+\item 数组最小值查找算法
+\item 冒泡排序元素排序逻辑
+\item 顺序查找指定元素位置
+\item 数组元素求和统计计算
+\end{itemize}
+
+\section{第六章 方法封装体系}
+\subsection{6.1 方法基础构成与调用}
+\begin{itemize}
+\item 代码封装复用设计思想
+\item 方法完整组成结构解析
+\item 方法声明作用与编写格式
+\item 方法实体功能代码定义
+\item 方法调用触发执行流程
+\item main主函数程序入口作用
+\item 自定义方法调用执行规则
+\end{itemize}
+
+\subsection{6.2 方法参数传递机制}
+\begin{itemize}
+\item 形式参数定义与作用
+\item 实际参数传入匹配规则
+\item 形参实参数据类型对应
+\item 基本类型值传递拷贝原理
+\item 引用类型地址传递特性
+\item 可变参数不定个数传参
+\end{itemize}
+
+\subsection{6.3 方法返回值处理}
+\begin{itemize}
+\item return语句返回数据规则
+\item 单个返回值定义与接收
+\item 无返回值void方法特性
+\item 返回值数据类型匹配约束
+\end{itemize}
+
+\subsection{6.4 方法进阶特性}
+\begin{itemize}
+\item 方法重载判定全部条件
+\item 重载方法调用匹配规则
+\item 递归方法自身调用逻辑
+\item 递归递进执行过程
+\item 递归回溯返回流程
+\item 递归终止边界条件设置
+\end{itemize}
+
+\section{第七章 面向对象基础}
+\subsection{7.1 类与对象关联关系}
+\begin{itemize}
+\item 类抽象模板概念含义
+\item 类内部成员整体分类
+\item 对象实例化创建全过程
+\item 类与对象从属对应关系
+\item 成员变量描述对象属性
+\item 成员方法描述对象行为
+\item 对象调用自身成员语法
+\end{itemize}
+
+\subsection{7.2 成员变量分类特性}
+\begin{itemize}
+\item 实例成员变量归属对象
+\item 静态成员变量归属类
+\item 局部变量与成员变量区别
+\item 成员变量默认初始化值
+\item 静态变量共享全局特性
+\end{itemize}
+
+\subsection{7.3 构造方法详解}
+\begin{itemize}
+\item 构造方法对象初始化作用
+\item 无参默认构造方法规则
+\item 有参构造自定义初始化
+\item 构造方法重载实现多初始化
+\item 对象创建自动调用构造方法
+\end{itemize}
+
+\subsection{7.4 封装特性实现}
+\begin{itemize}
+\item private私有访问权限范围
+\item public公共访问权限范围
+\item 私有数据隐藏保护思想
+\item 提供公共get读取方法
+\item 提供公共set修改方法
+\item 数据合法性校验规则
+\end{itemize}
+
+\section{第八章 面向对象进阶}
+\subsection{8.1 类的继承机制}
+\begin{itemize}
+\item 父类基类概念定义
+\item 子类派生类概念定义
+\item 单继承唯一父类约束
+\item 继承成员自动拥有规则
+\item 不同权限成员继承访问
+\item super关键字调用父类成员
+\item 子类构造调用父类构造方法
+\item 继承代码复用扩展优势
+\end{itemize}
+
+\subsection{8.2 方法重写规则}
+\begin{itemize}
+\item 子类重写父类方法判定条件
+\item 重写返回值参数修饰符约束
+\item 重写后覆盖父类原有功能
+\item 重写方法业务逻辑改写
+\end{itemize}
+
+\subsection{8.3 多态运行机制}
+\begin{itemize}
+\item 向上转型对象形态转换
+\item 父类引用指向子类对象
+\item 多态成员变量调用特点
+\item 多态成员方法动态绑定
+\item 多态代码通用扩展优势
+\end{itemize}
+
+\subsection{8.4 四类访问修饰符}
+\begin{itemize}
+\item public公共全局访问范围
+\item protected同包子类访问范围
+\item default默认同包访问范围
+\item private私有本类访问范围
+\item 修饰符层级权限对比选用
+\end{itemize}
+
+\subsection{8.5 static静态关键字}
+\begin{itemize}
+\item 静态变量类共享特性
+\item 静态方法直接类调用
+\item 静态代码块加载执行顺序
+\item 静态成员与实例成员区别
+\end{itemize}
+
+\section{第九章 常用核心工具类}
+\subsection{9.1 String字符串类}
+\begin{itemize}
+\item 字符串两种创建方式
+\item 字符串常量池内存机制
+\item 字符串不可修改本质特性
+\item 字符串长度获取方法
+\item 字符定位截取子串
+\item 查找指定字符下标位置
+\item 字符串内容替换操作
+\item 字符串分割拆分处理
+\item 字符串大小相等比较
+\end{itemize}
+
+\subsection{9.2 基本类型包装类}
+\begin{itemize}
+\item 八种基本类型对应包装类
+\item 自动装箱基本转包装类型
+\item 自动拆箱包装转基本类型
+\item 包装类字符串转数值方法
+\item 数值区间常量取值范围
+\end{itemize}
+
+\subsection{9.3 数学与日期工具类}
+\begin{itemize}
+\item Math类常用算术计算方法
+\item 随机数生成调用方式
+\item 日期时间对象创建获取
+\item 日期格式化样式转换
+\item 日期前后时间计算对比
+\end{itemize}
+
+\section{第十章 异常处理机制}
+\subsection{10.1 异常分类体系}
+\begin{itemize}
+\item 编译期受检异常特点
+\item 运行期非受检异常特点
+\item 系统内置常见异常类型
+\item 异常产生触发业务场景
+\item 异常信息组成内容解析
+\end{itemize}
+
+\subsection{10.2 异常捕获处理}
+\begin{itemize}
+\item try监控异常代码块范围
+\item catch捕获对应异常类型
+\item 单异常类型捕获写法
+\item 多异常分级捕获顺序规则
+\item finally代码块最终执行特性
+\item 异常捕获后补救业务逻辑
+\end{itemize}
+
+\subsection{10.3 异常抛出与声明}
+\begin{itemize}
+\item throw手动主动抛出异常对象
+\item throws方法异常声明标识
+\item 异常向上层调用者传递
+\item 自定义异常类创建编写
+\end{itemize}
+
+\section{第十一章 集合框架体系}
+\subsection{11.1 集合基础认知}
+\begin{itemize}
+\item 集合与数组存储差异对比
+\item 集合动态扩容特性优势
+\item 单列集合Collection根接口
+\item 双列集合Map根接口结构
+\item 集合泛型约束数据类型
+\end{itemize}
+
+\subsection{11.2 List有序可重复集合}
+\begin{itemize}
+\item ArrayList动态数组底层结构
+\item LinkedList双向链表底层结构
+\item List集合增元素方法
+\item List集合删元素方法
+\item List集合改元素方法
+\item List集合查元素方法
+\item 普通遍历迭代器遍历方式
+\end{itemize}
+
+\subsection{11.3 Set无序去重集合}
+\begin{itemize}
+\item HashSet哈希表存储原理
+\item TreeSet自然排序规则
+\item Set元素唯一性判定机制
+\item Set集合基础增删遍历操作
+\end{itemize}
+
+\subsection{11.4 Map键值映射集合}
+\begin{itemize}
+\item HashMap哈希键值存储结构
+\item 键唯一值重复约束特性
+\item Map添加查询删除元素
+\item 键集合值集合获取遍历
+\end{itemize}
+
+\section{第十二章 IO文件流}
+\subsection{12.1 IO流分类划分}
+\begin{itemize}
+\item 输入流读取数据方向
+\item 输出流写入数据方向
+\item 字节流通用所有文件类型
+\item 字符流专属文本文件读写
+\item 节点流直接操作原始文件
+\item 处理流包装增强读写功能
+\end{itemize}
+
+\subsection{12.2 基础文件读写操作}
+\begin{itemize}
+\item 文件对象创建路径绑定
+\item 文件打开流对象创建
+\item 单个字节字符读取方式
+\item 批量数组读取提升效率
+\item 数据覆盖追加写入区分
+\item 文件流关闭资源释放
+\end{itemize}
+
+\subsection{12.3 缓冲高效流}
+\begin{itemize}
+\item 缓冲区缓存数据原理
+\item 缓冲字节流高效读写
+\item 缓冲字符流行读取特性
+\item 缓冲流大幅提速优势特点
+\end{itemize}
+
+\section{第十三章 多线程编程}
+\subsection{13.1 线程基础概念}
+\begin{itemize}
+\item 进程操作系统资源单位
+\item 线程进程内执行单元
+\item 主线程程序默认执行线程
+\item 子线程独立并发执行
+\item 线程完整五大生命周期
+\item 线程状态切换触发条件
+\end{itemize}
+
+\subsection{13.2 线程四种创建方式}
+\begin{itemize}
+\item 继承Thread类创建线程
+\item 实现Runnable接口创建
+\item 实现Callable带返回线程
+\item 线程池复用线程创建
+\item 线程启动start调用规则
+\end{itemize}
+
+\subsection{13.3 线程安全与同步}
+\begin{itemize}
+\item 多线程并发数据共享问题
+\item synchronized同步代码块
+\item synchronized同步成员方法
+\item 锁对象唯一锁定规则
+\item 线程休眠礼让等待方法
+\end{itemize}
+
+\section{第十四章 反射与注解}
+\subsection{14.1 反射机制原理}
+\begin{itemize}
+\item 类字节码Class对象获取
+\item 反射获取构造方法对象
+\item 反射获取成员变量对象
+\item 反射获取成员方法对象
+\item 反射动态创建实例对象
+\item 反射调用成员赋值执行方法
+\end{itemize}
+
+\subsection{14.2 注解体系}
+\begin{itemize}
+\item 注解标记作用与分类
+\item 系统内置基础注解用途
+\item 元注解修饰注解范围
+\item 自定义注解格式编写
+\item 代码中解析注解数据}
+\end{itemize}

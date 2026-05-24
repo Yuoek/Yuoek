@@ -1,0 +1,454 @@
+
+% C语言系统化细分学习目录 符号全转义
+\section{第一章 C语言入门认知}
+\subsection{1.1 编程语言基础概念}
+\begin{itemize}
+\item 机器语言、汇编语言、高级语言区别
+\item C语言发展历史、标准版本与迭代
+\item C语言核心特点：高效、跨平台、可移植
+\item C语言主流应用领域：系统、嵌入式、驱动、算法
+\end{itemize}
+
+\subsection{1.2 程序编译运行原理}
+\begin{itemize}
+\item 源代码、目标文件、可执行文件概念
+\item 预处理、编译、汇编、链接四步流程
+\item 编译报错、运行报错、逻辑报错区分
+\end{itemize}
+
+\subsection{1.3 开发环境搭建与使用}
+\begin{itemize}
+\item GCC编译器安装与基础命令使用
+\item VSCode配置C语言编译运行环境
+\item Vim编辑器代码编写基础操作
+\item 首个HelloWorld程序逐行解析
+\end{itemize}
+
+\subsection{1.4 C语言基础语法框架}
+\begin{itemize}
+\item 程序入口main()函数作用与写法
+\item 语句结束分号、代码块大括号规范
+\item 关键字、标识符、标识符命名规则
+\item 单行注释\/\/、多行注释\/** **\/使用场景
+\end{itemize}
+
+\section{第二章 基础数据与运算体系}
+\subsection{2.1 基本数据类型}
+\begin{itemize}
+\item 短整型short、基本整型int、长整型long
+\item 超长整型long long取值范围与内存占用
+\item 单精度浮点float、双精度浮点double
+\item 字符类型char、无符号字符unsigned char
+\item 布尔类型\_Bool逻辑真假表示
+\end{itemize}
+
+\subsection{2.2 类型修饰限定符}
+\begin{itemize}
+\item signed有符号、unsigned无符号修饰
+\item 数据类型取值范围边界理解
+\item sizeof运算符计算变量、类型字节大小
+\item 不同类型数据自动转换、强制转换规则
+\end{itemize}
+
+\subsection{2.3 常量分类}
+\begin{itemize}
+\item 整型常量、浮点常量、字符常量
+\item 字符串常量存储本质与结束标志
+\item \#define宏定义符号常量
+\item const修饰只读常量特性与用法
+\end{itemize}
+
+\subsection{2.4 变量定义与使用}
+\begin{itemize}
+\item 变量声明、定义、初始化三种形式
+\item 变量内存分配原理与地址概念
+\item 局部变量、全局变量基础区分
+\item 变量命名禁忌与规范书写习惯
+\end{itemize}
+
+\subsection{2.5 运算符全集}
+\begin{itemize}
+\item 算术运算符：加、减、乘、除、取模
+\item 自增++、自减--前置后置区别
+\item 赋值运算符与复合赋值运算
+\item 大于、小于、相等、不等关系运算
+\item 逻辑与\&\&、逻辑或||、逻辑非!运算
+\item 按位与\&、按位或|、异或\^、取反~
+\item 左移<<、右移>>位运算实操
+\item 三目条件运算?:、逗号表达式运算
+\end{itemize}
+
+\subsection{2.6 表达式与运算优先级}
+\begin{itemize}
+\item 合法表达式书写规则
+\item 运算符优先级高低排序
+\item 运算符结合性：左结合、右结合
+\item 复杂表达式分步拆解计算思路
+\end{itemize}
+
+\subsection{2.7 标准输入输出}
+\begin{itemize}
+\item printf格式化输出全部格式控制符
+\item 十进制、八进制、十六进制格式打印
+\item scanf安全读取数据与地址传参
+\item getchar、putchar单个字符读写
+\item puts、fgets字符串读取与输出
+\end{itemize}
+
+\section{第三章 程序流程控制结构}
+\subsection{3.1 顺序结构}
+\begin{itemize}
+\item 自上而下顺序执行逻辑
+\item 简单数值计算、数据交换案例
+\end{itemize}
+
+\subsection{3.2 分支选择结构}
+\begin{itemize}
+\item if单分支条件判断语句
+\item if-else双分支二选一逻辑
+\item if-else if-else多分支区间判断
+\item switch多路分支匹配语法规范
+\item switch中break跳出、default默认分支
+\item 分支语句多层嵌套逻辑分析
+\end{itemize}
+
+\subsection{3.3 循环遍历结构}
+\begin{itemize}
+\item while循环：先判断条件后执行代码
+\item do-while循环：先执行再判断条件
+\item for循环初始化、条件、更新三段式
+\item 单层循环求和、计数、遍历案例
+\item 双层循环嵌套行列打印、矩阵处理
+\item 多层循环嵌套执行顺序理解
+\end{itemize}
+
+\subsection{3.4 循环跳转语句}
+\begin{itemize}
+\item break终止当前循环与分支结构
+\item continue跳过本次剩余循环内容
+\item goto无条件跳转语句慎用场景
+\item 死循环成因、危害与合理应用
+\end{itemize}
+
+\section{第四章 数组与字符串处理}
+\subsection{4.1 一维数组}
+\begin{itemize}
+\item 一维数组定义、多种初始化方式
+\item 数组下标访问元素、下标越界危害
+\item 数组遍历、求和、平均值计算
+\item 数组最大值、最小值查找定位
+\item 数组元素查找、替换、删除操作
+\item 数组逆序、排序基础操作
+\end{itemize}
+
+\subsection{4.2 二维数组}
+\begin{itemize}
+\item 二维数组行列定义与初始化
+\item 二维数组内存连续存储规律
+\item 按行遍历、按列遍历两种方式
+\item 矩阵输入输出、矩阵加法运算
+\item 矩阵行列最值、对角线数据处理
+\end{itemize}
+
+\subsection{4.3 字符数组}
+\begin{itemize}
+\item 字符数组定义与单个字符存储
+\item 字符串结束符\textbackslash0底层原理
+\item 字符数组与普通数组异同点
+\end{itemize}
+
+\subsection{4.4 字符串标准库函数}
+\begin{itemize}
+\item strlen计算字符串有效长度
+\item strcpy、strncpy字符串安全拷贝
+\item strcat、strncat字符串拼接合并
+\item strcmp、strncmp字符串大小比较
+\item strchr字符查找、strstr子串查找
+\end{itemize}
+
+\subsection{4.5 字符串综合实操}
+\begin{itemize}
+\item 字符串大小写相互转换
+\item 字符串反转、空格去除处理
+\item 字符串分割、统计字符个数
+\end{itemize}
+
+\section{第五章 函数模块化编程}
+\subsection{5.1 函数基础概念}
+\begin{itemize}
+\item 函数作用：代码复用、简化结构
+\item 函数完整构成：返回值、函数名、参数
+\item 函数定义、函数声明、函数调用
+\item 头文件引用与函数声明关联
+\end{itemize}
+
+\subsection{5.2 函数参数与返回值}
+\begin{itemize}
+\item 形式参数、实际参数对应关系
+\item 无参函数、有参函数写法区别
+\item return返回数据、终止函数执行
+\item void无返回值函数使用规范
+\end{itemize}
+
+\subsection{5.3 数组作为函数参数}
+\begin{itemize}
+\item 一维数组传入函数处理数据
+\item 二维数组传参行列参数规则
+\item 数组传参本质地址传递特性
+\end{itemize}
+
+\subsection{5.4 变量存储属性分类}
+\begin{itemize}
+\item 局部变量作用域、生命周期
+\item 全局变量作用范围与优缺点
+\item static静态局部变量常驻内存特性
+\item static静态全局变量文件访问限制
+\item extern外部变量跨文件引用调用
+\item auto、register存储类别说明符
+\end{itemize}
+
+\subsection{5.5 递归函数}
+\begin{itemize}
+\item 递归思想：自身调用自身逻辑
+\item 递归必备终止条件防止死递归
+\item 阶乘、斐波那契数列递归实现
+\item 递归遍历、简单回溯基础案例
+\item 递归栈溢出原因与优化思路
+\end{itemize}
+
+\section{第六章 指针核心重难点}
+\subsection{6.1 指针基础原理}
+\begin{itemize}
+\item 内存地址、内存单元、指针变量
+\item 取地址运算符\&、解引用运算符*
+\item 指针变量定义、赋值、取值操作
+\item NULL空指针含义与安全使用
+\end{itemize}
+
+\subsection{6.2 指针与数组结合}
+\begin{itemize}
+\item 数组名本质首元素地址
+\item 指针加减运算遍历数组元素
+\item 一维数组指针遍历写法
+\item 二维数组指针访问行列数据
+\item 数组指针、指针数组概念区分辨析
+\end{itemize}
+
+\subsection{6.3 字符指针与字符串}
+\begin{itemize}
+\item 字符指针表示字符串常量
+\item 指针方式改写字符串库函数
+\item 字符串常量区不可修改特性
+\item 字符数组与字符指针本质差异
+\end{itemize}
+
+\subsection{6.4 多级指针}
+\begin{itemize}
+\item 二级指针定义、赋值、取值
+\item 二级指针指向一维、二维数据
+\item 多级指针适用复杂参数场景
+\end{itemize}
+
+\subsection{6.5 函数指针}
+\begin{itemize}
+\item 指针作为函数参数传递地址
+\item 函数指针定义格式与调用方法
+\item 简单回调函数基础理解
+\end{itemize}
+
+\section{第七章 自定义复合数据类型}
+\subsection{7.1 结构体}
+\begin{itemize}
+\item 结构体自定义数据类型定义
+\item 结构体变量多种初始化方式
+\item 结构体成员点运算符访问赋值
+\item 结构体嵌套成员定义与访问
+\item 结构体数组批量存储同类对象
+\item 结构体指针箭头访问成员变量
+\item 结构体内存对齐规则与大小计算
+\end{itemize}
+
+\subsection{7.2 共用体union}
+\begin{itemize}
+\item 共用体共享同一块内存特点
+\item 共用体变量定义与成员赋值
+\item 共用体数据类型转换应用
+\item 共用体与结构体存储区别对比
+\end{itemize}
+
+\subsection{7.3 枚举类型enum}
+\begin{itemize}
+\item 枚举定义固定有限状态选项
+\item 枚举默认数值、自定义赋值
+\item 枚举用于状态、星期、选项标识
+\end{itemize}
+
+\subsection{7.4 类型重命名typedef}
+\begin{itemize}
+\item 基础数据类型别名简化
+\item 结构体、指针类型别名简写
+\item typedef与\#define宏定义本质区别
+\end{itemize}
+
+\section{第八章 动态内存管理}
+\subsection{8.1 程序内存四区模型}
+\begin{itemize}
+\item 栈区存储局部变量特性
+\item 堆区手动管理动态内存空间
+\item 全局区存放全局、静态变量
+\item 常量区字符串常量只读存储
+\item 四大区域生命周期与访问权限
+\end{itemize}
+
+\subsection{8.2 动态内存标准函数}
+\begin{itemize}
+\item malloc申请指定大小堆内存
+\item calloc申请内存并自动初始化0
+\item realloc对已有内存扩容、缩容
+\item free释放堆内存避免空间浪费
+\end{itemize}
+
+\subsection{8.3 动态内存常见错误}
+\begin{itemize}
+\item 野指针产生原因与规避方法
+\item 内存泄漏问题检测与修复
+\item 动态内存越界访问危害排查
+\item 重复释放、空指针释放错误
+\end{itemize}
+
+\subsection{8.4 动态内存综合应用}
+\begin{itemize}
+\item 动态一维数组灵活开辟空间
+\item 动态结构体数组存储数据
+\end{itemize}
+
+\section{第九章 文件读写操作}
+\subsection{9.1 文件基础概念}
+\begin{itemize}
+\item 文本文件、二进制文件存储区别
+\item 文件指针FILE*作用与文件流
+\item 文件路径相对路径、绝对路径写法
+\end{itemize}
+
+\subsection{9.2 文件打开关闭模式}
+\begin{itemize}
+\item r只读、w只写、a追加写入模式
+\item r+读写、w+新建读写、a+追加读写
+\item fopen打开文件、fclose关闭文件
+\item 文件打开失败判断与异常处理
+\end{itemize}
+
+\subsection{9.3 文本文件读写}
+\begin{itemize}
+\item fgetc、fputc单个字符读写文件
+\item fgets、fputs整行文本读取写入
+\item fprintf格式化写入文件数据
+\item fscanf格式化读取文件内容
+\end{itemize}
+
+\subsection{9.4 二进制文件读写}
+\begin{itemize}
+\item fread批量读取二进制块数据
+\item fwrite批量写入二进制数据
+\item 结构体数据二进制持久化存储
+\end{itemize}
+
+\subsection{9.5 文件指针定位}
+\begin{itemize}
+\item fseek移动文件指针指定偏移位置
+\item rewind重置文件指针到开头
+\item ftell获取当前指针偏移位置
+\end{itemize}
+
+\section{第十章 预处理指令}
+\subsection{10.1 头文件包含指令}
+\begin{itemize}
+\item \#include<>系统库头文件引入
+\item \#include""自定义文件包含
+\item 头文件重复包含问题与防护
+\end{itemize}
+
+\subsection{10.2 宏定义指令}
+\begin{itemize}
+\item 无参宏定义常量替换
+\item 带参宏定义简易函数替换
+\item 宏定义换行、运算符注意事项
+\end{itemize}
+
+\subsection{10.3 条件编译指令}
+\begin{itemize}
+\item \#ifdef、\#ifndef条件判断编译
+\item \#else、\#endif分支编译控制
+\item 不同平台代码兼容适配用法
+\end{itemize}
+
+\subsection{10.4 其他预处理指令}
+\begin{itemize}
+\item \#error编译报错提示指令
+\item \#pragma编译参数设置指令
+\end{itemize}
+
+\section{第十一章 基础算法实现}
+\subsection{11.1 排序算法}
+\begin{itemize}
+\item 冒泡排序原理、代码、优化版本
+\item 选择排序思路与手写实现
+\item 插入排序逻辑与适用场景
+\end{itemize}
+
+\subsection{11.2 查找算法}
+\begin{itemize}
+\item 顺序查找无序数组遍历检索
+\item 二分查找有序数组高效查找
+\end{itemize}
+
+\subsection{11.3 常用基础算法案例}
+\begin{itemize}
+\item 斐波那契数列迭代递归写法
+\item 素数判断、水仙花数统计
+\item 最大公约数、最小公倍数求解
+\end{itemize}
+
+\section{第十二章 综合项目实战}
+\subsection{12.1 简易控制台计算器}
+\begin{itemize}
+\item 加减乘除四则运算实现
+\item 循环连续计算、异常输入拦截
+\end{itemize}
+
+\subsection{12.2 学生信息管理系统}
+\begin{itemize}
+\item 结构体存储学号姓名成绩
+\item 信息新增、查询、修改、删除
+\item 成绩排序、总分平均分统计
+\end{itemize}
+
+\subsection{12.3 本地文件通讯录系统}
+\begin{itemize}
+\item 联系人姓名电话存储
+\item 信息读写保存到本地文件
+\item 联系人查找、新增、删除功能
+\end{itemize}
+
+\section{第十三章 程序调试与排错}
+\subsection{13.1 错误类型区分}
+\begin{itemize}
+\item 语法错误编译直接报错
+\item 运行错误程序异常终止
+\item 逻辑错误结果不符合预期
+\end{itemize}
+
+\subsection{13.2 常见经典报错总结}
+\begin{itemize}
+\item 下标越界、空指针访问错误
+\item 内存泄漏、重复释放内存
+\item 函数声明定义参数不匹配
+\item 字符串结束符缺失异常
+\end{itemize}
+
+\subsection{13.3 基础调试方法}
+\begin{itemize}
+\item printf打印中间变量排查逻辑
+\item 断点调试、分步执行查看数据
+\item 边界值测试验证程序稳定性
+\end{itemize}

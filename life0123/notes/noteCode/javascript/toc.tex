@@ -1,0 +1,515 @@
+
+\section{第一章 JavaScript 语言入门基础}
+\subsection{1.1 语言定位与核心特性}
+\begin{itemize}
+\item JavaScript诞生与版本迭代发展
+\item 弱类型动态脚本语言属性
+\item 直译式解释执行运行特点
+\item 浏览器客户端运行场景
+\item Node.js服务端运行场景
+\item 网页交互驱动设计思想
+\item 单线程同步执行机制
+\item 原型链面向对象特性
+\end{itemize}
+
+\subsection{1.2 运行环境与代码引入}
+\begin{itemize}
+\item 浏览器JS解析引擎作用
+\item V8高性能引擎执行原理
+\item Node.js后端运行环境搭建
+\item script标签内嵌脚本编写
+\item 外部独立JS文件引入加载
+\item 事件触发延迟执行脚本
+\end{itemize}
+
+\subsection{1.3 基础语法书写规范}
+\begin{itemize}
+\item 标识符合法字符组成规则
+\item 大小写敏感命名区分特性
+\item 标识符驼峰命名行业规范
+\item 系统关键字分类与作用
+\item 保留字使用限制约束
+\item 单行注释编写格式用途
+\item 多行块注释编写格式用途
+\item 语句分号结束分隔规则
+\item 大括号代码块边界划分
+\end{itemize}
+
+\section{第二章 变量常量与完整数据类型}
+\subsection{2.1 变量与常量声明方式}
+\begin{itemize}
+\item var老式变量声明与变量提升
+\item let块级作用域变量定义规则
+\item const常量声明不可修改特性
+\item 变量初始化赋值操作
+\item 变量二次赋值数值改写
+\item 全局变量作用生效范围
+\item 局部函数作用域范围
+\item 块级作用域隔离访问规则
+\end{itemize}
+
+\subsection{2.2 七大原始基础数据类型}
+\begin{itemize}
+\item number数值整数浮点存储类型
+\item string字符串文本不可变类型
+\item boolean布尔真假逻辑判定类型
+\item null空对象占位类型
+\item undefined未定义默认空类型
+\item symbol唯一不可重复标识类型
+\item bigint超大整数高精度数值类型
+\end{itemize}
+
+\subsection{2.3 引用复合数据类型}
+\begin{itemize}
+\item object对象键值封装结构
+\item array数组有序元素容器
+\item function函数功能引用类型
+\item 引用类型堆内存存储特点
+\end{itemize}
+
+\subsection{2.4 数据类型检测判定}
+\begin{itemize}
+\item typeof简易基础类型检测
+\item Object.prototype精准类型判断
+\item instanceof引用对象类型校验
+\end{itemize}
+
+\subsection{2.5 数据类型相互转换}
+\begin{itemize}
+\item 运算隐式自动类型转换规则
+\item 字符串转数值强制转换
+\item 数值转字符串格式转换
+\item 任意数据转布尔判定转换
+\item 转换过程数据丢失问题
+\end{itemize}
+
+\section{第三章 全类别运算符体系}
+\subsection{3.1 算术运算符}
+\begin{itemize}
+\item 加法运算数值拼接双重特性
+\item 减法运算数值计算规则
+\item 乘法运算数值计算规则
+\item 除法整数小数运算区分
+\item 取模余数运算计算逻辑
+\item 前置自增执行先后顺序
+\item 后置自增执行先后顺序
+\item 前置自减后置自减运算逻辑
+\end{itemize}
+
+\subsection{3.2 赋值与复合赋值运算符}
+\begin{itemize}
+\item 基础赋值数据覆盖逻辑
+\item 加减乘除取模复合简写赋值
+\end{itemize}
+
+\subsection{3.3 关系比较运算符}
+\begin{itemize}
+\item 相等松散等值判断规则
+\item 全等严格类型数值双判断
+\item 不等与不全等反向判定
+\item 大于小于大小边界比较
+\item 大于等于小于等于判定
+\item 关系运算布尔结果返回
+\end{itemize}
+
+\subsection{3.4 逻辑运算符}
+\begin{itemize}
+\item 逻辑与全真条件判定规则
+\item 逻辑或一真条件判定规则
+\item 逻辑非布尔值取反运算
+\item 逻辑短路与截断执行特性
+\item 逻辑短路或截断执行特性
+\item 多条件逻辑组合嵌套判断
+\end{itemize}
+
+\subsection{3.5 位运算与特殊运算符}
+\begin{itemize}
+\item 二进制按位与或异或取反
+\item 二进制左右位移运算逻辑
+\item 三元条件判断运算符格式
+\item 逗号多表达式顺序执行
+\item 运算符优先级排序层级
+\item 运算符左右结合执行顺序
+\end{itemize}
+
+\section{第四章 程序流程控制全部结构}
+\subsection{4.1 顺序执行结构}
+\begin{itemize}
+\item 自上而下逐行代码执行逻辑
+\item 顺序语句先后执行约束规则
+\end{itemize}
+
+\subsection{4.2 分支判断结构}
+\begin{itemize}
+\item if单分支条件判断语句
+\item if-else双分支二选一逻辑
+\item else if多分支区间逐级匹配
+\item switch开关常量匹配分支
+\item case分支匹配执行规则
+\item break阻断分支穿透作用
+\item default默认兜底分支逻辑
+\item 分支语句多层嵌套使用方式
+\end{itemize}
+
+\subsection{4.3 多类型循环遍历结构}
+\begin{itemize}
+\item while先判断后执行条件循环
+\item do-while先执行后判断循环
+\item for三段式计数循环完整结构
+\item for-in遍历对象自有属性
+\item for-of遍历数组字符串元素
+\end{itemize}
+
+\subsection{4.4 循环跳转与嵌套控制}
+\begin{itemize}
+\item break终止跳出当前单层循环
+\item continue跳过单次循环迭代
+\item 双层多层循环嵌套运行顺序
+\item 无限循环构成与终止条件设置
+\end{itemize}
+
+\section{第五章 数组与对象核心操作}
+\subsection{5.1 数组基础定义与读写}
+\begin{itemize}
+\item 数组字面量构造函数创建
+\item 数组下标从零起始索引规则
+\item 通过下标存取修改数组元素
+\item length属性获取数组长度
+\end{itemize}
+
+\subsection{5.2 数组增删改查基础方法}
+\begin{itemize}
+\item push尾部追加元素操作
+\item pop尾部删除元素操作
+\item unshift头部插入元素
+\item shift头部移除元素
+\item splice定点截取替换元素
+\end{itemize}
+
+\subsection{5.3 数组遍历与高阶处理方法}
+\begin{itemize}
+\item 普通for循环遍历数组
+\item forEach遍历执行回调函数
+\item filter条件筛选数组元素
+\item map映射返回新数组数据
+\item reduce累计聚合数组数值
+\end{itemize}
+
+\subsection{5.4 数组排序拼接截取操作}
+\begin{itemize}
+\item sort数组元素排序规则
+\item reverse数组反转顺序
+\item concat多数组合并拼接
+\item slice截取指定区间子数组
+\end{itemize}
+
+\subsection{5.5 对象基础创建与访问}
+\begin{itemize}
+\item 对象字面量快速创建实例
+\item new构造函数创建对象
+\item 点语法访问对象属性
+\item 中括号语法动态访问属性
+\item 对象属性新增删除操作
+\end{itemize}
+
+\subsection{5.6 对象方法与属性遍历}
+\begin{itemize}
+\item 对象内部方法定义与调用
+\item in运算符判定属性存在性
+\item Object.keys获取属性名数组
+\item 对象自有属性与继承属性区分
+\end{itemize}
+
+\section{第六章 函数编程与作用域闭包}
+\subsection{6.1 函数多种定义形式}
+\begin{itemize}
+\item 函数声明式定义提升特性
+\item 函数表达式定义写法
+\item 箭头函数精简语法格式
+\item 匿名函数无名称函数结构
+\end{itemize}
+
+\subsection{6.2 函数参数传递机制}
+\begin{itemize}
+\item 形式参数定义默认赋值
+\item 实际参数传入匹配规则
+\item arguments类数组参数集合
+\item rest剩余参数收集多数据
+\item 基本类型值传递拷贝特性
+\item 引用类型地址传递特性
+\end{itemize}
+
+\subsection{6.3 函数返回值与调用}
+\begin{itemize}
+\item return语句终止函数并返回数据
+\item 单值多数据返回处理方式
+\item 无返回值默认undefined结果
+\item 函数直接调用执行流程
+\end{itemize}
+
+\subsection{6.4 递归函数原理与使用}
+\begin{itemize}
+\item 函数自身嵌套调用逻辑
+\item 递归递进执行过程
+\item 递归回溯返回流程
+\item 递归终止边界条件设置
+\end{itemize}
+
+\subsection{6.5 作用域层级查找规则}
+\begin{itemize}
+\item 全局作用域全局变量共享
+\item 函数局部作用域隔离变量
+\item 块级作用域变量访问限制
+\item 作用域链逐层变量查找机制
+\end{itemize}
+
+\subsection{6.6 闭包概念与实际特性}
+\begin{itemize}
+\item 内层函数引用外层变量构成闭包
+\item 闭包延长局部变量生命周期
+\item 闭包私有数据缓存作用
+\item 闭包内存占用泄漏问题
+\end{itemize}
+
+\section{第七章 DOM文档对象模型操作}
+\subsection{7.1 DOM树形结构基础}
+\begin{itemize}
+\item 文档对象模型整体概念
+\item 网页节点层级树形关系
+\item 元素节点文本节点属性节点
+\item 根节点文档顶层对象document
+\end{itemize}
+
+\subsection{7.2 多种DOM元素获取方式}
+\begin{itemize}
+\item 根据ID精准获取唯一元素
+\item 根据类名获取元素集合
+\item 根据标签名批量查找元素
+\item CSS选择器单元素查询
+\item CSS选择器多元素集合查询
+\end{itemize}
+
+\subsection{7.3 元素内容读写操作}
+\begin{itemize}
+\item innerHTML读写标签包含HTML结构
+\item innerText纯文本内容读写
+\item textContent标准文本内容操作
+\end{itemize}
+
+\subsection{7.4 元素属性动态管理}
+\begin{itemize}
+\item 获取元素固有属性数值
+\item 设置修改元素固有属性
+\item 自定义属性存取读取
+\item 属性新增删除清除操作
+\end{itemize}
+
+\subsection{7.5 元素样式动态控制}
+\begin{itemize}
+\item 行内样式直接赋值修改
+\item 类名切换控制样式效果
+\item 获取元素实际计算样式
+\end{itemize}
+
+\subsection{7.6 DOM节点增删复制操作}
+\begin{itemize}
+\item 创建新空白元素节点
+\item 末尾头部插入页面节点
+\item 指定位置插入节点元素
+\item 移除页面存在节点
+\item 节点深浅拷贝复制操作
+\end{itemize}
+
+\section{第八章 网页事件处理机制}
+\subsection{8.1 事件基础触发原理}
+\begin{itemize}
+\item 用户行为触发事件机制
+\item 浏览器监听捕获事件
+\item 常见鼠标键盘页面事件
+\end{itemize}
+
+\subsection{8.2 三种事件绑定方式}
+\begin{itemize}
+\item HTML行内标签绑定事件
+\item DOM元素简单事件绑定
+\item addEventListener标准事件监听
+\end{itemize}
+
+\subsection{8.3 事件对象属性方法}
+\begin{itemize}
+\item 事件对象event自动生成
+\item 获取触发事件源元素
+\item 鼠标坐标按键判定信息
+\item 键盘按键编码识别获取
+\end{itemize}
+
+\subsection{8.4 事件传播三个阶段}
+\begin{itemize}
+\item 事件捕获自上而下传播
+\item 目标阶段触发当前元素事件
+\item 事件冒泡自下而上扩散
+\end{itemize}
+
+\subsection{8.5 事件阻止与委托}
+\begin{itemize}
+\item 阻止事件冒泡扩散行为
+\item 阻止默认网页原生行为
+\item 事件委托父级代理监听子元素
+\item 事件委托性能优化原理
+\end{itemize}
+
+\section{第九章 内置常用核心对象}
+\subsection{9.1 String字符串对象方法}
+\begin{itemize}
+\item 字符串字符位置查找匹配
+\item 截取指定区间子字符串
+\item 字符串替换指定内容
+\item 字符串分割转为数组
+\item 大小写格式统一转换
+\item 首尾空格清除处理
+\end{itemize}
+
+\subsection{9.2 Math数学运算对象}
+\begin{itemize}
+\item 最大值最小值求取计算
+\item 四舍五入向上向下取整
+\item 平方开方基础数学运算
+\item 随机小数整数范围生成
+\end{itemize}
+
+\subsection{9.3 Date日期时间对象}
+\begin{itemize}
+\item 时间对象当前时间创建
+\item 年月日时分秒毫秒获取
+\item 时间戳毫秒总数换算
+\item 自定义时间初始化创建
+\item 日期时间格式拼接转换
+\end{itemize}
+
+\section{第十章 BOM浏览器对象模型}
+\subsection{10.1 window顶层窗口对象}
+\begin{itemize}
+\item 全局window对象顶层作用
+\item 弹窗提示确认输入交互框
+\item 一次性延时定时器使用
+\item 循环间隔定时器执行
+\item 定时器清除终止运行
+\end{itemize}
+
+\subsection{10.2 location地址栏对象}
+\begin{itemize}
+\item 网址协议域名路径参数解析
+\item 页面跳转新地址访问
+\item 页面原地刷新重载操作
+\item URL查询参数获取拆分
+\end{itemize}
+
+\subsection{10.3 history浏览历史对象}
+\begin{itemize}
+\item 历史页面记录数量获取
+\item 后退上一页浏览页面
+\item 前进下一页浏览页面
+\item 指定步数跳转历史记录
+\end{itemize}
+
+\subsection{10.4 navigator浏览器信息}
+\begin{itemize}
+\item 浏览器类型版本信息读取
+\item 操作系统设备环境判定
+\end{itemize}
+
+\section{第十一章 异步编程体系}
+\subsection{11.1 同步与异步执行差异}
+\begin{itemize}
+\item 同步阻塞等待执行逻辑
+\item 异步非阻塞后台执行特性
+\item 事件循环主线程任务队列
+\end{itemize}
+
+\subsection{11.2 回调函数异步模式}
+\begin{itemize}
+\item 回调函数触发执行时机
+\item 多层回调嵌套地狱问题
+\end{itemize}
+
+\subsection{11.3 Promise异步对象}
+\begin{itemize}
+\item pending初始等待状态
+\item resolve成功完成状态
+\item reject失败异常状态
+\item then成功回调链式调用
+\item catch异常错误捕获处理
+\item finally最终必定执行回调
+\end{itemize}
+
+\subsection{11.4 async与await语法糖}
+\begin{itemize}
+\item async修饰异步函数定义
+\item await暂停等待异步结果
+\item 同步写法实现异步逻辑
+\item 异步代码异常捕获处理
+\end{itemize}
+
+\section{第十二章 AJAX网络请求与JSON}
+\subsection{12.1 前后端交互与HTTP协议}
+\begin{itemize}
+\item 客户端服务端数据交互流程
+\item HTTP请求响应基础模型
+\item 请求头响应头信息作用
+\item 状态码标识请求结果状态
+\end{itemize}
+
+\subsection{12.2 原生AJAX请求流程}
+\begin{itemize}
+\item XMLHttpRequest请求对象创建
+\item 请求地址方式初始化配置
+\item GET查询参数拼接携带
+\item POST请求请求体数据发送
+\item 监听请求状态变化回调
+\item 响应报文数据解析处理
+\end{itemize}
+
+\subsection{12.3 JSON数据交换格式}
+\begin{itemize}
+\item JSON键值标准格式规范
+\item JSON与JS对象语法区别
+\item JSON字符串转JS对象解析
+\item JS对象转为JSON序列化字符串
+\end{itemize}
+
+\section{第十三章 ES6及进阶新语法}
+\subsection{13.1 变量解构赋值}
+\begin{itemize}
+\item 数组位置对应解构取值
+\item 对象属性匹配解构赋值
+\item 解构默认值容错设置
+\end{itemize}
+
+\subsection{13.2 拓展与剩余运算符}
+\begin{itemize}
+\item 拓展运算符展开数组对象
+\item 数组合并对象合并简写
+\item 剩余参数收拢多个实参
+\end{itemize}
+
+\subsection{13.3 对象语法简写优化}
+\begin{itemize}
+\item 属性名变量简写赋值
+\item 函数方法简写定义格式
+\item 对象动态属性名创建
+\end{itemize}
+
+\subsection{13.4 模块化导入导出}
+\begin{itemize}
+\item 默认导出暴露模块成员
+\item 按需单独导出指定内容
+\item 默认导入外部模块数据
+\item 解构导入多项模块成员
+\end{itemize}
+
+\subsection{13.5 Set与Map新数据结构}
+\begin{itemize}
+\item Set自动去重集合特性
+\item Map任意类型键值映射结构
+\item 集合增删查改遍历操作
+\end{itemize}

@@ -1,9 +1,0 @@
-# luna_pinyin.custom.yaml
-# 自定义朙月拼音输入方案配置
-
-patch:
-  # 添加 leetcode_translator 到 translators
-  "engine/translators/@before 0": leetcode_translator
-
-  # 添加 lcpy 识别模式（支持批量）
-  recognizer/patterns/lcpy: "^lcpy[a-z]*$"

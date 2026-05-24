@@ -76,3 +76,6 @@
 [submodule "life0123/life"]
 	path = life0123/life
 	url = git@github.com:Yuoek/life.git
+[submodule "db/rime"]
+	path = db/rime
+	url = git@github.com:Yuoek/rime.git

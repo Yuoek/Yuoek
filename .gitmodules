@@ -79,3 +79,6 @@
 [submodule "db/rime"]
 	path = db/rime
 	url = git@github.com:Yuoek/rime.git
+[submodule "db/words"]
+	path = db/words
+	url = git@github.com:Yuoek/words.git

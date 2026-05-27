@@ -1,8 +1,8 @@
 [submodule "web/typepad"]
-	path = life/web/typepad
+	path = db/web/typepad
 	url = git@github.com:Yuoek/typepad.git
 [submodule "web/qwerty-learner"]
-	path = life/web/qwerty-learner
+	path = db/web/qwerty-learner
 	url = git@github.com:Yuoek/qwerty-learner.git
 [submodule "film/film"]
 	path = film/film
@@ -22,9 +22,6 @@
 [submodule "tools"]
 	path = life/tools
 	url = git@github.com:Yuoek/tools.git
-[submodule "class"]
-	path = life0123/class
-	url = git@github.com:Yuoek/class.git
 [submodule "hugo/hugo-docs"]
 	path = life/hugo/hugo-docs
 	url = git@github.com:Yuoek/hugo-docs.git
@@ -73,12 +70,15 @@
 [submodule "fork/dyyRime"]
 	path = fork/dyyRime
 	url = git@github.com:Yuoek/dyyRime.git
-[submodule "life0123/life"]
-	path = life/life
-	url = git@github.com:Yuoek/life.git
 [submodule "db/rime"]
 	path = db/rime
 	url = git@github.com:Yuoek/rime.git
 [submodule "db/words"]
 	path = db/words
 	url = git@github.com:Yuoek/words.git
+[submodule "life/class"]
+	path = life/class
+	url = git@github.com:Yuoek/class.git
+[submodule "pdf"]
+	path = pdf
+	url = git@github.com:Yuoek/pdf.git

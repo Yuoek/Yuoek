@@ -1,14 +1,14 @@
 [submodule "web/typepad"]
-	path = life0123/web/typepad
+	path = life/web/typepad
 	url = git@github.com:Yuoek/typepad.git
 [submodule "web/qwerty-learner"]
-	path = life0123/web/qwerty-learner
+	path = life/web/qwerty-learner
 	url = git@github.com:Yuoek/qwerty-learner.git
 [submodule "film/film"]
 	path = film/film
 	url = git@github.com:Yuoek/film.git
 [submodule "code/python"]
-	path = life0123/code/python
+	path = life/code/python
 	url = git@github.com:Yuoek/python.git
 [submodule "film/music"]
 	path = film/music
@@ -17,37 +17,37 @@
 	path = science/mathematics
 	url = git@github.com:Yuoek/mathematics.git
 [submodule "hugo/hugo"]
-	path = life0123/hugo/hugo
+	path = life/hugo/hugo
 	url = git@github.com:Yuoek/hugo.git
 [submodule "tools"]
-	path = life0123/tools
+	path = life/tools
 	url = git@github.com:Yuoek/tools.git
 [submodule "class"]
 	path = life0123/class
 	url = git@github.com:Yuoek/class.git
 [submodule "hugo/hugo-docs"]
-	path = life0123/hugo/hugo-docs
+	path = life/hugo/hugo-docs
 	url = git@github.com:Yuoek/hugo-docs.git
 [submodule "code/c"]
-	path = life0123/code/c
+	path = life/code/c
 	url = git@github.com:Yuoek/c.git
 [submodule "code/cpp"]
-	path = life0123/code/cpp
+	path = life/code/cpp
 	url = git@github.com:Yuoek/cpp.git
 [submodule "code/java"]
-	path = life0123/code/java
+	path = life/code/java
 	url = git@github.com:Yuoek/java.git
 [submodule "code/javascript"]
-	path = life0123/code/javascript
+	path = life/code/javascript
 	url = git@github.com:Yuoek/javascript.git
 [submodule "code/go"]
-	path = life0123/code/go
+	path = life/code/go
 	url = git@github.com:Yuoek/go.git
 [submodule "hugo/hugo-wiki"]
-	path = life0123/hugo/hugo-wiki
+	path = life/hugo/hugo-wiki
 	url = git@github.com:Yuoek/hugo-wiki.git
 [submodule "hugo/hugo-comment"]
-	path = life0123/hugo/hugo-comment
+	path = life/hugo/hugo-comment
 	url = git@github.com:Yuoek/hugo-comment.git
 [submodule "film/quote"]
 	path = film/quote
@@ -59,13 +59,13 @@
 	path = film/poetry
 	url = git@github.com:Yuoek/poetry.git
 [submodule "code/asm"]
-	path = life0123/code/asm
+	path = life/code/asm
 	url = git@github.com:Yuoek/asm.git
 [submodule "science/physics"]
 	path = science/physics
 	url = git@github.com:Yuoek/physics.git
 [submodule "film/sophiw"]
-	path = life0123/sophiw
+	path = life/sophiw
 	url = git@github.com:Yuoek/sophiw.git
 [submodule "science/cs"]
 	path = science/cs
@@ -74,7 +74,7 @@
 	path = fork/dyyRime
 	url = git@github.com:Yuoek/dyyRime.git
 [submodule "life0123/life"]
-	path = life0123/life
+	path = life/life
 	url = git@github.com:Yuoek/life.git
 [submodule "db/rime"]
 	path = db/rime

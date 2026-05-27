@@ -1,0 +1,50 @@
+\documentclass[UTF8, a4paper, 12pt]{ctexart}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{xcolor}
+
+% 全局列表配置
+\setlist[itemize]{
+    leftmargin=*,
+    nosep,
+    topsep=0pt,
+    partopsep=0pt
+}
+
+% 目录章节加粗
+\renewcommand{\cftsecfont}{\bfseries}
+
+
+\title{\Large 每日语录}
+\author{Yuoek}
+\date{\today}
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    \textcolor{blue}{\Huge\textbf{Quote}} \\[1em]
+    \textcolor{blue!60!black}{\Large 一言一行} \\[2em]
+    \textcolor{gray}{\large 你如同一个吻，封碱了你的嘴} \\[1em]
+    \today
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+\input{5/26.tex}
+\clearpage
+\input{5/27.tex}
+\clearpage
+
+
+\end{document}

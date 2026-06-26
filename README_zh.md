@@ -28,7 +28,7 @@ git update
 
 或
 ```bash
-git clone --recurse-submodules git@github.com/Yuoek/Yuoek.git
+git clone --recurse-submodules git@github.com:Yuoek/Yuoek.git
 ```
 
 **更新子模块**

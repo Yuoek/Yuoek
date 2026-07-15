@@ -82,3 +82,6 @@
 [submodule "pdf"]
 	path = pdf
 	url = git@github.com:Yuoek/pdf.git
+[submodule "doc"]
+	path = doc
+	url = git@github.com:Yuoek/doc.git
